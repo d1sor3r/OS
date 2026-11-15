@@ -1,0 +1,14 @@
+#d
+monitor
+a.out
+*.o
+*.out
+
+
+core
+core.*
+
+
+*.swp
+*~
+.vscode/
