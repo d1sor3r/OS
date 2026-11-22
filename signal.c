@@ -57,7 +57,7 @@ int main (void){
     memset(&address, 0, sizeof(address));
     address.sin_family = AF_INET;
     address.sin_addr.s_addr = htonl(INADDR_ANY);
-    address.sin_port = htons(PORT); //устанавливается порт (с каким портом будет ассоцировано)
+    address.sin_port = htons(PORT);
     if (bind(server_fd, (struct sockaddr *)&address, sizeof(address)) == -1){
         perror("bind");
         close(server_fd);
